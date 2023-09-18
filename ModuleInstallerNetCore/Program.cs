@@ -48,24 +48,24 @@ byte[] UseStreamDotReadMethod(Stream stream)
 //        Console.WriteLine(iox.Message);
 //    }
 //}
-//void CheckNcaLayerProcess()
-//{
-//    try
-//    {
-//        Process[] ncaproceses = Process.GetProcessesByName("javaw");
-//        foreach (var proc in ncaproceses)
-//        {
-//            proc.Kill();
-//        }
-//        Thread.Sleep(1000);
-//        string username = Name.Replace(desktopName + "\\", "");
-//        string NcaExe = diskSpace + username + exepath;
-//        Process.Start(NcaExe);
+void CheckNcaLayerProcess()
+{
+    try
+    {
+        Process[] ncaproceses = Process.GetProcessesByName("javaw");
+        foreach (var proc in ncaproceses)
+        {
+            proc.Kill();
+        }
+        Thread.Sleep(1000);
+        string username = Name.Replace(desktopName + "\\", "");
+        string NcaExe = diskSpace + username + exepath;
+        Process.Start(NcaExe);
 
-//    }
-//    catch
-//    {
+    }
+    catch
+    {
 
-//    }
+    }
 
-//}
+}
